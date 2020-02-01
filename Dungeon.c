@@ -80,7 +80,7 @@ void onPlayerTurn(Party* pParty,Monster* pMonster,Element* gemsSlot[14]){
 	scanf("%s",inputStr);
 
 	if(checkValidCommand(inputStr)){
-		printf("%s\n",inputStr);
+		moveGem(gemsSlot,inputStr[0],inputStr[1]);
 	}
 	else{
 		printf("もう一度入力してください。");
